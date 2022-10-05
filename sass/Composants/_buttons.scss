@@ -1,0 +1,36 @@
+.dropdown__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.dropdown__button:focus {
+        ~ .dropdown__title{
+            > .fa-chevron-down{
+            transform: rotateZ(180deg);
+            }
+        }
+        ~ .dropdown__text{
+            display: initial;
+            transition: all 2s ease-in-out;
+            }
+            > .dropdown__text--p{    
+                overflow: visible;
+                transition: all 2s ease-in-out;
+                
+            }
+            }
+    
+
+
+    
+
+        

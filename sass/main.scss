@@ -1,0 +1,14 @@
+@import "./Utils/variables";
+@import "./Utils/mixin";
+@import "./Utils/placeholder";
+@import "./Base/base";
+@import "./Base/typographie";
+@import "./Composants/buttons";
+@import "./Layout/header";
+@import "./Layout/footer";
+@import "./Layout/section";
+@import "./Layout/gallery";
+// importer les pages
+@import "./Pages/index";
+@import "./Pages/about";
+@import "./Pages/errorPage"
