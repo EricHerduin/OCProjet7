@@ -830,15 +830,13 @@ ul {
 .container__house--tag {
   position: relative;
   display: flex;
-  flex-flow: row;
-  height: 25px;
+  flex-flow: row wrap;
+  min-height: auto;
 }
 @media screen and (max-width: 750px) {
   .container__house--tag {
     min-width: 42px;
     max-width: 100%;
-    overflow: hidden;
-    float: left;
     height: auto;
   }
 }
