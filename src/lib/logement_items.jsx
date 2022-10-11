@@ -31,28 +31,18 @@ export function HostName({ name, picture }) {
 
 export function Rate(props) {
   const rate = [1, 2, 3, 4, 5];
-  const repeatrate = rate
-    .filter((number) => number <= props.rating)
-    .map((number) => {
-      return {
-        rate: number,
-      };
-    });
-  const norate = rate
-    .filter((number) => number <= 5 - props.rating)
-    .map((number) => {
-      return {
-        rate: number,
-      };
-    });
   return (
     <div className="container__house--rate">
-      {repeatrate.map((number) => {
-        return <i class="fa-sharp fa-solid fa-star"></i>;
-      })}
-      {norate.map((number) => {
-        return <i class="fa-sharp fa-solid fa-star fa-star__grey"></i>;
-      })}
+      {rate
+        .filter((number) => number <= props.rating)
+        .map(() => {
+          return <i class="fa-sharp fa-solid fa-star"></i>;
+        })}
+      {rate
+        .filter((number) => number <= 5 - props.rating)
+        .map((number) => {
+          return <i class="fa-sharp fa-solid fa-star fa-star__grey"></i>;
+        })}
     </div>
   );
 }
