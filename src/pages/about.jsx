@@ -4,14 +4,12 @@ import SectionImage from "../components/sectionHeaderImage";
 import { Dropdown } from "../lib/dropdown";
 import TextData from "../database/text.json";
 import "../CSS/styles.css";
-import ImageAbout from "../assets/ImgAbout.jpg";
 
 function About() {
-  console.log(ImageAbout);
   return (
     <div className="main">
       <Header about={"underline"} />
-      <SectionImage class="sectionHeaderImgAbout" image={ImageAbout} />
+      <SectionImage class="sectionHeaderImgAbout" />
       <div className="container">
         {TextData.map((item) => (
           <Dropdown
