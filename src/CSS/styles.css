@@ -906,6 +906,7 @@ ul {
   .container__house--owner-name {
     position: relative;
     right: 0px;
+    width: 50px;
     display: flex;
     align-items: flex-end;
     font-family: "Montserrat";
@@ -1134,6 +1135,11 @@ ul {
   flex-flow: column;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 750px) {
+  .dropdownhouse__item__text--p > ul > li {
+    text-transform: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
