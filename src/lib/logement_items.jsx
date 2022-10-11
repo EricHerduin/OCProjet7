@@ -13,7 +13,11 @@ export function Tags({ data }) {
   return (
     <div className="container__house--tag">
       {data.map((tag) => {
-        return <h3 className="container__house--tag-text">{tag}</h3>;
+        return (
+          <h3 className="container__house--tag-text" key={tag}>
+            {tag}
+          </h3>
+        );
       })}
     </div>
   );
@@ -35,14 +39,25 @@ export function Rate(props) {
     <div className="container__house--rate">
       {rate
         .filter((number) => number <= props.rating)
-        .map(() => {
-          return <i class="fa-sharp fa-solid fa-star"></i>;
+        .map((number) => {
+          const key = entierAleatoire(1, 10);
+          return <i className="fa-sharp fa-solid fa-star" key={key}></i>;
         })}
       {rate
         .filter((number) => number <= 5 - props.rating)
         .map((number) => {
-          return <i class="fa-sharp fa-solid fa-star fa-star__grey"></i>;
+          const key = entierAleatoire(10, 20);
+          return (
+            <i
+              className="fa-sharp fa-solid fa-star fa-star__grey"
+              key={key}
+            ></i>
+          );
         })}
     </div>
   );
+}
+
+function entierAleatoire(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }

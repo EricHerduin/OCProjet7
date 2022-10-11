@@ -6,7 +6,7 @@ function TextBanner(props) {
   }
   return (
     <div className={props.classDiv}>
-      <p className={props.classP}>{props.description}</p>
+      <div className={props.classP}>{props.description}</div>
     </div>
   );
 }

@@ -16,6 +16,7 @@ function About() {
             title={item.title}
             description={item.description}
             classDropdown="dropdownAbout"
+            key={item.title}
           />
         ))}
       </div>

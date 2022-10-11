@@ -8,9 +8,9 @@ import { getItem } from "../lib/routeGetItems";
 export default function LogementPage() {
   const id = useParams();
   const listEquipments = getItem(id._id).equipments.map((data) => {
-    return <li>{data}</li>;
+    return <li key={data.indexOf}>{data}</li>;
   });
-  console.log(getItem(id._id).pictures);
+
   return (
     <div className="house__container">
       <Carousel
