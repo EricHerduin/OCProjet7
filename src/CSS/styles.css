@@ -220,6 +220,7 @@ ul {
   z-index: 3;
   top: 0px;
   height: 223px;
+  background-image: url(/src/assets/IMG.jpg);
   border-radius: 25px;
   margin-bottom: 20px;
   background-size: cover;
@@ -227,10 +228,9 @@ ul {
 }
 @media screen and (max-width: 750px) {
   .sectionHeaderImg {
-    width: 350px;
+    width: 90%;
     height: 111px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 auto;
     margin-bottom: 22px;
     border-radius: 10px;
   }
@@ -298,19 +298,21 @@ ul {
   height: 223px;
   border-radius: 25px;
   margin-bottom: 20px;
+  background-image: url(/src/assets/ImgAbout.jpg);
   background-size: cover;
   background-position: center;
 }
 @media screen and (max-width: 750px) {
   .sectionHeaderImgAbout {
-    width: 335px;
+    width: "6";
     height: 223px;
-    Z-index: 999;
-    background-image: "/src/assets/gustavo-alves-YOXSC4zRcxw-unsplash_1Mobile.jpg";
-    background-size: contain;
+    background-image: url(/src/assets/ImgAbout_Mobile.jpg);
+    background-size: cover;
+    border-radius: 10px;
     left: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    right: 10px;
+    margin-left: 10px;
+    margin-right: 30px;
     margin-bottom: 22px;
   }
 }
@@ -553,7 +555,7 @@ ul {
 }
 @media screen and (max-width: 750px) {
   .container {
-    margin: 20px 10px 0px 10px;
+    margin: 20px 20px 0px 20px;
   }
 }
 
@@ -590,20 +592,17 @@ ul {
   line-height: 12px;
   color: #ffffff;
 }
-.dropdownAbout__title .fa-chevron-down {
-  margin: 0 auto;
-  margin-right: 30px;
-  line-height: 47px;
-  font-size: 24px;
-  width: 47px;
-  height: 47px;
-  text-align: center;
-  align-self: center;
-  color: #ffffff;
-  transform: rotateZ(0deg);
-  z-index: 0;
-  transition: all 600ms ease-in-out;
+@media screen and (max-width: 750px) {
+  .dropdownAbout__title h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 13px;
+    color: #ffffff;
+  }
 }
+.dropdownAbout__title .fa-chevron-down,
 .dropdownAbout__title .fa-chevron-up {
   margin: 0 auto;
   margin-right: 30px;
@@ -617,6 +616,12 @@ ul {
   transform: rotateZ(0deg);
   z-index: 0;
   transition: all 600ms ease-in-out;
+}
+@media screen and (max-width: 750px) {
+  .dropdownAbout__title .fa-chevron-down,
+.dropdownAbout__title .fa-chevron-up {
+    margin-right: 0px;
+  }
 }
 .dropdownAbout__text {
   top: 0;
@@ -671,6 +676,18 @@ ul {
   font-size: 288px;
   line-height: 411px;
 }
+@media screen and (max-width: 750px) {
+  .error__number {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 136px;
+    color: #ff6060;
+    height: 99px;
+    top: 262px;
+  }
+}
 .error__text {
   height: 51px;
   top: 606px;
@@ -678,12 +695,36 @@ ul {
   font-size: 36px;
   line-height: 51px;
 }
+@media screen and (max-width: 750px) {
+  .error__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ff6060;
+    text-align: center;
+    width: 75%;
+    top: 372px;
+    margin: 0 auto;
+  }
+}
 .error__link {
   top: 839px;
   height: 26px;
   font-weight: 500;
   font-size: 18px;
   line-height: 51px;
+}
+@media screen and (max-width: 750px) {
+  .error__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
 }
 .error__link a {
   color: #ff6060;
@@ -942,6 +983,15 @@ ul {
   font-size: 24px;
   color: #e3e3e3;
   margin-right: 10px;
+}
+@media screen and (max-width: 750px) {
+  .fa-star__grey {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+  }
 }
 
 .dropdownhouse {
