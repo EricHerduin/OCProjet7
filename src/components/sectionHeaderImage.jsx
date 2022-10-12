@@ -1,4 +1,4 @@
-import "../CSS/styles.css";
+import "../css/styles.css";
 
 export default function SectionHeaderImg(props) {
   return (

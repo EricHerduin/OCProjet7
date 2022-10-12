@@ -1,5 +1,5 @@
 import logo from "../assets/LOGO2_BW.svg";
-import "../CSS/styles.css";
+import "../css/styles.css";
 
 export default function Footer() {
   return (

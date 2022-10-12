@@ -1,6 +1,6 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
-import "../CSS/styles.css";
+import "../css/styles.css";
 
 export default function ErrorPage() {
   return (

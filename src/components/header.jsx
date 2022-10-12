@@ -1,5 +1,5 @@
 import logo from "../assets/logo.svg";
-import "../CSS/styles.css";
+import "../css/styles.css";
 
 export default function Header(props) {
   return (

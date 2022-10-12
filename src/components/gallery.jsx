@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/styles.css";
+import "../css/styles.css";
 import { Link } from "react-router-dom";
 import getItems from "../lib/routeGetItems";
 

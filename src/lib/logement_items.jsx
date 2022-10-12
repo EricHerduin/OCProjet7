@@ -46,7 +46,7 @@ export function Rate(props) {
       {rate
         .filter((number) => number <= 5 - props.rating)
         .map((number) => {
-          const key = entierAleatoire(10, 20);
+          const key = number.indexOf;
           return (
             <i
               className="fa-sharp fa-solid fa-star fa-star__grey"

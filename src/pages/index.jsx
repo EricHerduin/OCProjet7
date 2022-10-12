@@ -2,7 +2,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import SectionImage from "../components/sectionHeaderImage";
 import { ListGallery } from "../components";
-import "../CSS/styles.css";
+import "../css/styles.css";
 import "https://kit.fontawesome.com/ef204fd57f.js";
 
 export default function Index() {

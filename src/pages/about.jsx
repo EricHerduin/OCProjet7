@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import SectionImage from "../components/sectionHeaderImage";
 import { Dropdown } from "../lib/dropdown";
 import TextData from "../database/text.json";
-import "../CSS/styles.css";
+import "../css/styles.css";
 
 function About() {
   return (
