@@ -5,7 +5,9 @@
   opacity: 0.3;
 }
 
-body, html, #root {
+body,
+html,
+#root {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -20,13 +22,14 @@ body, html, #root {
 }
 
 .main {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   width: 100%;
+  min-height: 100%;
   height: auto;
-  background: #FFFFFF;
+  background: #ffffff;
   padding-bottom: 50px;
 }
 
@@ -175,26 +178,27 @@ ul {
 }
 
 .footer {
-  position: static;
-  bottom: -300px;
+  position: relative;
+  bottom: 0px;
   margin-top: 50px;
-  z-index: 0;
   min-width: 375px;
   width: 100%;
-  height: 250px;
+  height: 200px;
   display: flex;
   flex-flow: column;
   text-align: center;
   background: #000000;
 }
 .footer__logo {
-  position: relative;
+  position: static;
+  height: 100px;
+  margin-top: 66px;
   max-width: 122px;
   margin: 0 auto;
   top: 66px;
 }
 .footer__text {
-  position: relative;
+  position: static;
   max-width: 513px;
   height: 46px;
   top: 101px;
@@ -468,21 +472,18 @@ ul {
 }
 
 .slider__container {
-  max-width: 100%;
+  position: relative;
+  width: 100%;
   height: 415px;
-  position: absolute;
-  top: 0px;
-  left: 100px;
-  right: 100px;
+  margin-bottom: 25px;
   display: flex;
   flex-flow: row;
 }
 @media screen and (max-width: 750px) {
   .slider__container {
-    left: 20px;
-    right: 20px;
     height: 255px;
-    top: 20px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .slider__container--img {
@@ -553,8 +554,7 @@ ul {
 }
 
 .container {
-  position: static;
-  top: 406px;
+  position: relative;
   margin: 20px 100px 100px 100px;
   display: flex;
   flex-flow: column;
@@ -739,41 +739,38 @@ ul {
 
 .house__container {
   position: relative;
-  top: 0;
-  min-height: 1200px;
-  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
 }
 @media screen and (max-width: 750px) {
   .house__container {
-    width: 100%;
     margin: 0 auto;
+    min-height: 600px;
   }
 }
 
 .container__house {
+  position: relative;
   display: flex;
   flex-flow: row;
-  position: absolute;
-  max-width: 100%;
-  left: 100px;
-  right: 100px;
-  top: 513px;
-  justify-content: space-evenly;
-  margin: 0px 0px 0px Opx;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px 0px 25px 0px;
   height: auto;
 }
 @media screen and (max-width: 750px) {
   .container__house {
-    position: relative;
     flex-flow: column;
-    left: 0px;
-    top: 270px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 25px;
   }
 }
 .container__house--info {
-  width: 50%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -877,7 +874,6 @@ ul {
 .container__house--host {
   display: flex;
   flex-flow: column;
-  width: 50%;
   justify-content: space-between;
 }
 @media screen and (max-width: 750px) {
@@ -890,8 +886,8 @@ ul {
 .container__house--owner {
   display: flex;
   flex-flow: row;
+  justify-content: space-between;
   height: 50%;
-  width: 100%;
 }
 @media screen and (max-width: 750px) {
   .container__house--owner {
@@ -903,10 +899,9 @@ ul {
   }
 }
 .container__house--owner-name {
-  position: absolute;
+  position: relative;
   width: 93px;
   height: 64px;
-  right: 75px;
   top: 0 px;
   font-family: "Montserrat";
   font-style: normal;
@@ -937,11 +932,10 @@ ul {
   }
 }
 .container__house--owner-img {
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   height: 64px;
   width: 64px;
-  right: 0px;
 }
 @media screen and (max-width: 750px) {
   .container__house--owner-img {
@@ -1013,29 +1007,24 @@ ul {
 }
 
 .dropdownhouse {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-flow: row;
-  left: 100px;
-  right: 100px;
   height: auto;
+  width: 100%;
   justify-content: space-between;
-  top: 719px;
 }
 @media screen and (max-width: 1120px) {
   .dropdownhouse {
     flex-flow: column;
+    width: 100%;
   }
 }
 @media screen and (max-width: 750px) {
   .dropdownhouse {
     position: relative;
-    left: 0px;
-    right: 0px;
-    top: 280px;
     width: 100%;
     margin: 0 auto;
-    right: 20px;
   }
 }
 .dropdownhouse__item {
@@ -1058,7 +1047,7 @@ ul {
 @media screen and (max-width: 750px) {
   .dropdownhouse__item {
     min-width: 0px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 30px;
   }
