@@ -7,8 +7,10 @@ import "../css/styles.css";
 export default function Logement() {
   return (
     <div className="main">
-      <Header />
-      <LogementPage />
+      <div>
+        <Header />
+        <LogementPage />
+      </div>
       <Footer />
     </div>
   );
