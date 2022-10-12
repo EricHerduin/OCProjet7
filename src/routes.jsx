@@ -22,17 +22,3 @@ const routing = createBrowserRouter([
   },
 ]);
 export default routing;
-
-// export default function Routes() {
-//   return (
-//     <Router>
-//       <Route exact path="/" element={Index} errorElement={ErrorPage} />
-//       <Route path="/about" element={About} />
-//       <Route
-//         path="/logement/:_id"
-//         element={Logement}
-//         errorElement={ErrorPage}
-//       />
-//     </Router>
-//   );
-// }
