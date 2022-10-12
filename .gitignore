@@ -2,7 +2,7 @@
 /sass
 backend/
 sass/
-src/CSS/styles.css.map
+src/css/styles.css.map
 
 src/reportWebVitals.js
 src/setupTests.js
