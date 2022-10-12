@@ -33,33 +33,6 @@ export function HostName({ name, picture }) {
   );
 }
 
-export function Rate(props) {
-  const rate = [1, 2, 3, 4, 5];
-  return (
-    <div className="container__house--rate">
-      {rate
-        .filter((number) => number <= props.rating)
-        .map((number) => {
-          const key = number.indexOf;
-          return (
-            <i className="fa-sharp fa-solid fa-star" key={number.indexOf}></i>
-          );
-        })}
-      {rate
-        .filter((number) => number <= 5 - props.rating)
-        .map((number) => {
-          const key = number.indexOf;
-          return (
-            <i
-              className="fa-sharp fa-solid fa-star fa-star__grey"
-              key={key}
-            ></i>
-          );
-        })}
-    </div>
-  );
-}
-
 export function Rating(props) {
   const rate = [1, 2, 3, 4, 5];
   console.log(props.rating);
