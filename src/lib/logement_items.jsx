@@ -9,12 +9,12 @@ export function Title({ title, location }) {
   );
 }
 
-export function Tags({ data }) {
+export function Tags({ data, index }) {
   return (
     <div className="container__house--tag">
-      {data.map((tag) => {
+      {data.map((tag, index) => {
         return (
-          <h3 className="container__house--tag-text" key={tag}>
+          <h3 className="container__house--tag-text" key={index}>
             {tag}
           </h3>
         );
@@ -35,7 +35,6 @@ export function HostName({ name, picture }) {
 
 export function Rating(props) {
   const rate = [1, 2, 3, 4, 5];
-  console.log(props.rating);
   return (
     <div className="container__house--rate">
       {rate.map((number, index) => {
