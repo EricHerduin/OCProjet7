@@ -40,8 +40,10 @@ export function Rate(props) {
       {rate
         .filter((number) => number <= props.rating)
         .map((number) => {
-          const key = entierAleatoire(1, 10);
-          return <i className="fa-sharp fa-solid fa-star" key={key}></i>;
+          const key = number.indexOf;
+          return (
+            <i className="fa-sharp fa-solid fa-star" key={number.indexOf}></i>
+          );
         })}
       {rate
         .filter((number) => number <= 5 - props.rating)
@@ -58,6 +60,21 @@ export function Rate(props) {
   );
 }
 
-function entierAleatoire(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+export function Rating(props) {
+  const rate = [1, 2, 3, 4, 5];
+  console.log(props.rating);
+  return (
+    <div className="container__house--rate">
+      {rate.map((number, index) => {
+        return number <= props.rating ? (
+          <i className="fa-sharp fa-solid fa-star" key={index}></i>
+        ) : (
+          <i
+            className="fa-sharp fa-solid fa-star fa-star__grey"
+            key={index}
+          ></i>
+        );
+      })}
+    </div>
+  );
 }

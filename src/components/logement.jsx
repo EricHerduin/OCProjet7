@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useParams } from "react-router-dom";
 import { Dropdown } from "../lib/dropdown";
-import { Rate, Tags, HostName, Title } from "../lib/logement_items";
+import { Rating, Tags, HostName, Title } from "../lib/logement_items";
 import { Carousel } from "../lib/carousel";
 import { getItem } from "../lib/routeGetItems";
 
@@ -32,7 +32,7 @@ export default function LogementPage() {
             picture={getItem(id._id).host.picture}
           />
           <div className="container__house--rating">
-            <Rate rating={getItem(id._id).rating} />
+            <Rating rating={getItem(id._id).rating} />
           </div>
         </div>
       </div>
